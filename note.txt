@@ -1,0 +1,41 @@
+# git clone copy_link_git_muốn_clone
+
+# git checkout -b tên_file
+- barch develop là nhánh làm chung
+
+# git push origin tên_fie => đẩy lên git
+- khi làm riêng thì tạo feature/tên-công-việc
+- tạo file main.py để làm việc => nên tạo hàm main để chạy
+
+- Kiểm tra các hoạt động vừa làm
+# git status
+- Màu đỏ: nằm ở WORKING COPY
+- Để đẩy file qua STAGING AREA
+
+# git add . 
+=> thêm tất cả các thay đổi 
+- màu xanh lá: Các thay đổi đã nằm trong STAGING AREA
+
+- push các thay đổi lên LOCAL REPOSITORY => vẫn nằm trên máy của mình
+# git commit -am "Mô tả các thay đổi/hoạt động/ ..."
+
+- Đẩy code / file lên REMO REPOSITORY
+# git push origin tên_nhánh_feature
+
+- Meger commit cho feature do mỗi feature có 1 chức năng nên không 
+cần quá nhiều commit làm khó người đọc
+# git log -n 5 
+=> hiện 5 commit gần nhất
+
+# git reset --soft HEAD~2
+=> lệnh này có nghĩ:
+reset nhánh git -> ví dụ mình có 2 commit thì mình sẽ lui về 2 commit 
+nhưng vẫn lưu sự thay đổi của 2 commit này
+
+# git push -f origin tên_file
+=>  -f : folde update =  ghi đè các thay đổi trước đó 
+
+- quay lại sự thay đổi trc khi commit
+# git stash
+=> khôi phục bản trước khi thay đổi 
+
